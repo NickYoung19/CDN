@@ -1,3 +1,24 @@
+/*
+* HTML在引入JS时，通过timing属性给JS设置参数，然后再JS中通过获取标签属性的值来进行传参；
+* 如果没有进行传参，默认定时时间为 5 秒触发一次；
+* ===Demo===
+* <!DOCTYPE HTML>
+* <html>
+* <head>
+*   <meta charset="utf-8">
+*   <title>非第三方静态资源加载中断优化Demo</title>
+*   <!-- 引入js文件，并新增属性timing来指定js参数 -->
+*   <script id="time_ctrl" src="js/demo1.js" timing="3"></script>
+* </head>
+* <body>
+*   <img src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g2/M00/0A/00/ChMlWl5V3O6IWBoeAAuH50uG1RoAANdqAGPBNEAC4f_616.jpg">
+*   <img src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g2/M00/0A/00/ChMlWl5V3O6IWBoeAAuH50uG1RoAANdqAGPBNEAC4f_6161.jpg">
+*   <script type="text/javascript">
+*   </script>
+* </body>
+* </html>
+*/
+
 var num = 5;  // 定时器默认5秒触发一次
 if (document.getElementById("time_ctrl")) {
   num = document.getElementById("time_ctrl").getAttribute("timing");
