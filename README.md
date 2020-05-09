@@ -32,6 +32,6 @@ CDN 是构建在现有网络基础之上的`智能虚拟网络`，依靠部署�
   https://cdn.jsdelivr.net/gh/NickyangPeng/CDN/img/avatar.jpg
   ```
 
-  **Re：**CDN后面如果不使用版本号，将会直接引用最新资源；
+  **Re：** CDN后面如果不使用版本号，将会直接引用最新资源；
 
 
